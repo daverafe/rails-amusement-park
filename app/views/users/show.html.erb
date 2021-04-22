@@ -1,0 +1,20 @@
+
+
+<% if @user.admin == false %>   
+    <%=@user.name%>
+
+    Mood: <%=@user.mood%>
+
+
+    <%=@user.height%>
+
+
+    <%=@user.tickets%>
+<% else %>
+    <%=@user.name%>
+    ADMIN
+<% end %>
+
+<%= link_to 'Log Out', logout_path %>
+
+
